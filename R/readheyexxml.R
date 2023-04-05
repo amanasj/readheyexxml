@@ -11,13 +11,13 @@ readheyexxml <- function(folder){
     library(xml2)
     suppressPackageStartupMessages({library(xml2)})
   }
-  # install and load raster
+  # install and load tidyverse
   if (!require("tidyverse")){
     install.packages("tidyverse")
     library(tidyverse)
     suppressPackageStartupMessages({library(tidyverse)})
   }
-  # install and load raster
+  # install and load EBImage
   if (!require("EBImage")){
     if (!requireNamespace("BiocManager", quietly = TRUE))
       install.packages("BiocManager")
