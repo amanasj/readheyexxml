@@ -13,5 +13,15 @@ This package reads the xml file and extracts image attributes including bscan po
 2) series of ordered bscans which can be viewed (starts from bottom and goes upwards along en-face image)
 
 
+<br>
+
+
+library(devtools)
+
+install_github("amanasj/readheyexxml")
+
+library(readheyexxml)
+
+
 
 
