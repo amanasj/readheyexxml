@@ -28,7 +28,7 @@ readheyexxml <- function(folder){
   }
 
 
-
+  setwd(folder)
   file <- list.files(folder, pattern = "\\.xml$")
   xml <- read_xml(file)
 
@@ -82,7 +82,8 @@ readheyexxml <- function(folder){
 
 
   ### create a dataframe of chosen attributes
-  df <- data.frame(ID,scale_x,scale_lat_y,y_coord,ExamURL,
+  df <- data.frame(ID,scale_x,scale_lat_y,y_coord,ExamURL,ExamURL_enface,v1,v2,h1,h2,
+                   scalex_enface,scaley_enface,plot_start_x,plot_end_x,plot_start_y,plot_end_y,
                    stringsAsFactors = FALSE)
 
 
@@ -92,7 +93,7 @@ readheyexxml <- function(folder){
 
   ### Display enface image
   enface_img <- EBImage::readImage(ExamURL_enface)
-  #EBImage::display(enface_img)
+  enface_image <- EBImage::display(enface_img)
 
   ### crop enface image
   plot(enface_img)
@@ -107,12 +108,12 @@ readheyexxml <- function(folder){
   bscan_imgs <- EBImage::display(bscans)
 
 
-  return(list(data=df, enface_cropped_img=enface_cropped_img, bscan_imgs=bscan_imgs))
+  return(list(data=df,
+              enface_cropped_img=enface_cropped_img,
+              bscan_imgs=bscan_imgs,
+              enface_image=enface_image))
 
 }
-
-
-
 
 
 
