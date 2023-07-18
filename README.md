@@ -30,8 +30,11 @@ data <- readheyexxml(images_path)
 <br>
 
 data[1]    # shows the raw data
+<br>
 data[2]    # displays the cropped en-face image
+<br>
 data[3]    # displays all the b-scans which you can cycle through
+<br>
 data[4]    # displays the original (un-cropped) en-face image
 
 <br><br>
