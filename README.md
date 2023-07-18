@@ -15,6 +15,7 @@ This package reads the xml file and extracts image attributes including bscan po
 
 <br><br>
 
+<hr>
 
 library(devtools)
 
@@ -29,7 +30,7 @@ data <- readheyexxml(images_path)
 
 <br>
 
-data[1]   <hr> # shows the raw data
+data[1]    # shows the raw data
 <br>
 data[2]    # displays the cropped en-face image
 <br>
@@ -47,6 +48,6 @@ data[4]    # displays the original (un-cropped) en-face image
 
 <br><br>
 
-
+<hr>
 
 
