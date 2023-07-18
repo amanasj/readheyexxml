@@ -29,7 +29,7 @@ data <- readheyexxml(images_path)
 
 <br>
 
-data[1]    # shows the raw data
+data[1]   <div> # shows the raw data
 <br>
 data[2]    # displays the cropped en-face image
 <br>
