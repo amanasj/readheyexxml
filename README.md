@@ -45,8 +45,7 @@ data[4]    # displays the original (un-cropped) en-face image
 
 
 
-
-<br><br>
+<br>
 
 <hr>
 
