@@ -23,5 +23,27 @@ install_github("amanasj/readheyexxml")
 library(readheyexxml)
 
 
+<br>
+
+data <- readheyexxml(images_path)
+
+<br>
+
+data[1]    # shows the raw data
+data[2]    # displays the cropped en-face image
+data[3]    # displays all the b-scans which you can cycle through
+data[4]    # displays the original (un-cropped) en-face image
+
+<br><br>
+
+
+
+
+
+
+
+<br><br>
+
+
 
 
